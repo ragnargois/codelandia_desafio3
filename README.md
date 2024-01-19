@@ -1,12 +1,12 @@
-<h1 align="center">Codelândia | Desafio 02</h1>
-<br>
-<br>
+<h1 align="center">Página - Codelândia | Desafio 03</h1>
+
 ![image](/preview/preview.png)
 
 ## 📃 Sobre
-**JordanShoes - Codelândia | Desafio 2** 
-Este é o meu segundo desafio de uma série de atividades na Comunidade Codelândia e seguindo as especificações da seguinte UI. Aproveitei para fazer umas pequenas mínimas alterações na cor de texto de preço etc<br>
-[Figma](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Codel%C3%A2ndia-Desafios?node-id=1883%3A2)
+**Página - Codelândia | Desafio 3** 
+Continuando a série de atividades na Comunidade Codelândia, apresento o desafio 3 e seguindo as especificações da seguinte UI. 
+Este projeto coloquei uma animação no botão clique aqui com javascript, no formúlário coloquei o required do HTML para obrigar a preencher o form input<br>
+[Figma]([https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios-Codelândia?node-id=3725%3A2 ])
 
 Para ver os demais desafios, clique no link a seguir: <br>
 [Desafios](https:// /)
@@ -23,7 +23,7 @@ O projeto foi desenvolvido com as tecnologias abaixo: <br>
 ----------------------------------------------------------------------------------------------------
 
 ## 🎬 Live site
-**🔗️ https://www.alexgois.com.br/codelandia_desafio2**
+**🔗️ https://www.alexgois.com.br/codelandia_desafio3**
 
 
 
