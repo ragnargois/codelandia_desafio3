@@ -1,0 +1,273 @@
+/*Variáveis*/
+:root {
+   --bgSite: #d7d4ff;
+   --buttonColor: #6c63ff;
+ 
+   --white: #ffffff;
+   --white300: #f9f9f9;
+ 
+   --title: #2b2b2b;
+   --text: #555555;
+ }
+ 
+ /*Reset*/
+@font-face {
+  font-family: Merriweather-Regular;
+  src: url('../fonts/Merriweather-Regular.ttf');
+}
+ 
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ html {
+   font-size: 62.5%;
+ }
+ body {
+   font-size: 1.6rem;
+   display: flex;
+   justify-content: center;
+   font-family: Merriweather-Regular;
+ }
+ 
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   margin: 0;
+ }
+ ul,
+ ol {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+ a {
+   text-decoration: none;
+ }
+ img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+ }
+ button,
+ input {
+   border: 0;
+ }
+ button:focus,
+ input:focus {
+   border: 0;
+ }
+ button {
+   cursor: pointer;
+ }
+
+
+
+ .container {
+   justify-content: center;
+   background-color: var(--bgSite);
+   width: 1440px;
+ }
+ 
+ .container-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 400px;
+   padding: 20px 110px;
+ }
+ 
+ .text-header {
+   display: flex;
+   flex-direction: column;
+   width: 349px;
+   gap: 20px;
+ }
+ 
+
+
+/*
+ .btn-header {
+   background-color: var(--buttonColor);
+   width: 155px;
+   height: 50px;
+   color: var(--white);
+   font-weight: 700;
+   box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+   border-radius: 5px;
+   margin-top: 20px;
+ }
+ */
+
+  /* botão js*/
+  .button {
+    --color: #F6F8FF;
+    --background:#6c63ff;
+    --background-hover: #2b2b2b;
+    width: 155px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    border: 0;
+    padding: 8px 36px;
+    line-height: 26px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    background: none;
+    color: var(--color);
+    -webkit-tap-highlight-color: transparent;
+    margin-top: 20px;
+    svg {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 48px;
+        transform: translateZ(0);
+        stroke: var(--stroke, none);
+        stroke-width: var(--stroke-width, 0);
+        fill: var(--fill, var(--background));
+        transition: fill .25s linear;
+    }
+    span {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+    }
+    &:hover {
+        --fill: var(--background-hover);
+    }
+    &.border {
+        --stroke: #D1D6EE;
+        --stroke-width: 1px;
+        --color: #404660;
+        --background: #fff;
+        --background-hover: #FAFBFF;
+    }
+  }
+   /* fim botão js*/
+ 
+
+
+
+ header img {
+   width: 400px;
+ }
+ 
+ main {
+   display: flex; /* esse faz as div do conteudo um ficado do lado ao outro*/
+   justify-content: space-between;
+   flex-wrap: wrap; /*organiza as div do conteudo, organizado*/
+   background-color: var(--white300);
+   padding: 100px 110px 50px;
+ }
+ 
+ main h2,
+ p {
+   display: flex;
+   justify-content: center;
+ }
+ 
+ .card {
+   display: flex;
+   flex-direction: column;
+   width: 340px;
+   height: 423px;
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+   margin-bottom: 50px;
+ }
+ 
+ .card .text-card {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   padding: 20px;
+   height: 222px;
+   background-color: var(--white);
+ }
+ 
+ .card .text-card h2 {
+   margin-bottom: 20px;
+ }
+
+ section {
+   display: flex;
+   justify-content: center;
+   padding: 80px 20px;
+ }
+ 
+ section .container-section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 20px;
+ }
+ 
+ section div h2 {
+   margin: 20px auto;
+ }
+ 
+ section form {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+ }
+ 
+ form input {
+   width: 470px;
+   height: 65px;
+   padding: 20px;
+   border-radius: 6px;
+ }
+ 
+ form textarea {
+   height: 165px;
+   padding: 20px;
+   border-radius: 6px;
+ }
+ 
+ form button {
+   background-color: var(--buttonColor);
+   width: 470px;
+   height: 50px;
+   padding: 20px;
+   margin-top: 20px;
+   font-weight: 700;
+   color: var(--white);
+   box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+   border-radius: 5px;
+ }
+ 
+ @media (max-width: 800px) {
+     main{
+     justify-content: center;
+     padding: 0px 0px 0px;
+   }
+   .container-header {
+     flex-direction: column;
+     gap:20px;
+     height: 100%;
+     padding: 55px 20px;
+    }
+
+    form input {
+      width: 400px;
+    }
+
+    form button {
+      width: 400px;
+      padding: 0px;
+      margin-top: 20px;
+    }
+ 
+ }

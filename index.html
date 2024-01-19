@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Alex Gois" />  
+    <meta name="description" content="Jordan Shoes Codelândia - Desafio 02">
+    <meta name="keywords" content="Jordan Shoes, codelandia, Jordan Shoes codelandia, desafio 02, desafio, efront, 
+    alex, alex gois, gois" />
+
+    <title>Codelândia | Desafio 03</title>
+
+    <link rel="stylesheet" href="src/css/styles.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin3.min.js"></script> 
+
+
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="container-header">
+          <div class="text-header">
+            <h1>Encontre os melhores artigos
+              de programação em um só lugar</h1>
+            <p>
+              Explore o topo da programação em um só lugar!
+              Seu destino único para dicas e tendências atuais.
+            </p>
+
+            <button class="button">
+              <svg viewBox="0 0 132 48" preserveAspectRatio="none">
+                  <path d="M4,3 C24.6666667,3 45.3333333,3 66,3 C86.6666667,3 107.333333,3 128,3 C129.104569,3 130,3.8954305 130,5 C130,11.3333333 130,17.6666667 130,24 C130,30.3333333 130,36.6666667 130,43 C130,44.1045695 129.104569,45 128,45 C107.333333,45 86.6666667,45 66,45 C45.3333333,45 24.6666667,45 4,45 C2.8954305,45 2,44.1045695 2,43 C2,36.6666667 2,30.3333333 2,24 C2,17.6666667 2,11.3333333 2,5 C2,3.8954305 2.8954305,3 4,3 Z" />
+              </svg>
+              <span>Clique aqui!</span>
+            </button>
+          
+          </div>
+          <div><img src="src/img/image.svg" alt="" /></div>
+        </div>
+      </header>
+      <main>
+        <div class="card">
+          <img src="src/img/programacao.webp" alt="Linguagem de programação" />
+          <div class="text-card">
+            <h2>O que é linguagem de programação? Conheça as principais</h2>
+            <p>
+              Uma das mais populares vertentes da tecnologia da informação, a área de...
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="src/img/python.webp" alt="Python" />
+          <div class="text-card">
+            <h2>Python: por que a linguagem é tão usada para Data Science e finanças?</h2>
+            <p>
+              O mundo da programação conta com algumas opções de linguagem para...
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="src/img/github.webp" alt="Github" />
+          <div class="text-card">
+            <h2>GitHub tem receita de US$ 1 bilhão e 90 milhões de usuários</h2>
+            <p>
+              O popular serviço de repositório de código GitHub foi adquirido pela...
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="src/img/15.webp" alt="15 comandos Git" />
+          <div class="text-card">
+            <h2>15 comandos no GIT que os desenvolvedores precisam saber</h2>
+            <p>
+              Dominar os comandos GIT é uma habilidade que se conquista com...
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="src/img/git_github.webp" alt="GIT e GitHub" />
+          <div class="text-card">
+            <h2>GIT e GitHub: o que são e quais as diferenças entre eles?</h2>
+            <p>
+              Git e GibHub são dois softwares de controle de versão essenciais para...
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="src/img/copilot.webp" alt="GitHub Copilot" />
+          <div class="text-card">
+            <h2>GitHub Copilot ganha integração com GPT-4 e interface conversacional</h2>
+            <p>
+              O GitHub Copilot, ferramenta de desenvolvimento baseada em IA...
+            </p>
+          </div>
+        </div>
+      </main>
+      <section>
+        <div class="container-section">
+          <h2>Entre em contato</h2>
+          <div>
+            <form action="">
+              <input type="text" placeholder="Nome *" required/>
+              <input type="text" placeholder="E-mail *" required/>
+              <input type="text" placeholder="Celular *"  required/> 
+              <textarea placeholder="Mensagem *" required></textarea>
+              <button type="submit">Enviar mensagem</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </body>
+</html>
+
+<script>
+  gsap.registerPlugin(MorphSVGPlugin);
+
+document.querySelectorAll('.button').forEach(button => {
+
+    let path = button.querySelector('svg path')
+
+    button.addEventListener('pointerdown', e => {
+        gsap.to(path, {
+            duration: .25,
+            morphSVG: 'M4.61888061,3.16033114 C25.0792537,4.38677705 45.5396269,5 66,5 C86.4603676,5 106.920735,4.38677738 127.381103,3.16033213 L127.381102,3.16031915 C128.4837,3.09422671 129.43111,3.93448015 129.497203,5.03707774 C129.507043,5.20123476 129.496598,5.36597876 129.466107,5.52757892 C128.488702,10.707648 128,16.8651217 128,24 C128,31.1348854 128.488703,37.2923642 129.46611,42.4724366 L129.466097,42.4724389 C129.670899,43.5578488 128.957025,44.6037719 127.871615,44.8085734 C127.710017,44.8390647 127.545274,44.8495087 127.381119,44.8396689 C106.920746,43.613223 86.4603731,43 66,43 C45.5396324,43 25.0792647,43.6132226 4.61889712,44.8396679 L4.6188979,44.8396809 C3.51630032,44.9057733 2.56888986,44.0655198 2.50279742,42.9629223 C2.49295744,42.7987652 2.50340153,42.6340212 2.53389315,42.4724211 C3.51129772,37.292352 4,31.1348783 4,24 C4,16.8651146 3.51129674,10.7076358 2.53389023,5.52756343 L2.53390261,5.52756109 C2.32910108,4.44215115 3.04297524,3.3962281 4.12838519,3.19142657 C4.28998345,3.16093526 4.45472551,3.15049128 4.61888061,3.16033114 Z'
+        });
+    })
+
+    button.addEventListener('pointerup', e => {
+        gsap.to(path, {
+            duration: 1,
+            ease: 'elastic.out(1, 0.25)',
+            morphSVG: 'M4,3 C24.6666667,3 45.3333333,3 66,3 C86.6666667,3 107.333333,3 128,3 C129.104569,3 130,3.8954305 130,5 C130,11.3333333 130,17.6666667 130,24 C130,30.3333333 130,36.6666667 130,43 C130,44.1045695 129.104569,45 128,45 C107.333333,45 86.6666667,45 66,45 C45.3333333,45 24.6666667,45 4,45 C2.8954305,45 2,44.1045695 2,43 C2,36.6666667 2,30.3333333 2,24 C2,17.6666667 2,11.3333333 2,5 C2,3.8954305 2.8954305,3 4,3 Z'
+        });
+    })
+
+});
+</script>
