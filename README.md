@@ -9,7 +9,7 @@ Este projeto coloquei uma animação no botão clique aqui com javascript, no fo
 [Figma]([https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios-Codelândia?node-id=3725%3A2 ])
 
 Para ver os demais desafios, clique no link a seguir: <br>
-[Desafios](https:// /)
+[Desafios](https://alexgois.com.br/atividades)
 
 ---------------------------------------------------------------------------------------------------
 
